@@ -1,0 +1,19 @@
+sorry_the_world(X) :-  not(capable(X)).
+Is_rubbish(X) :- sorry_the_world(X).
+is_abstract_loser(X) :- is_rubbish(X).
+should_be_killed(X) :- is_abstract_loser(X).
+capable(X) :-  has(X, PhD) ; employed_by(X,Y), is_TOP500(Y); has(X,money); has(X, ability).
+
+\+ has(Nebulosa, PhD).
+not(employed_by(Nebulosa,Y)).
+not has(Nebulosa, money).
+not has(X, ability).
+
+? - is_rubbish(Nebulosa).
+? - is_abstract_loser(Nebulosa).
+question_killed(Nebulosa) :-
+write(Nebulosa),
+write('should die or not because of useless?'),
+nl.
+? - question_killed(Neblousa).
+halt(0).
