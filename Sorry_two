@@ -15,5 +15,5 @@ question_killed(Nebulosa) :-
 write(Nebulosa),
 write('should die or not because of useless?'),
 nl.
-? - question_killed(Neblousa).
+? - question_killed(Nebulosa).
 halt(0).
